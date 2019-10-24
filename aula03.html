@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aula 03 - JS</title>
+</head>
+<body>
+    
+    <script>
+        /*
+            comentario de múltiplas linhas
+            comentario de múltiplas linhas
+        */
+
+        var m = 'Mensagem teste...'
+        function alerta(msg){
+            alert(msg);
+        }
+        alerta('Essa é a mensagem de alerta');
+        
+        function calcular(x, y){
+            soma(x, y);
+            subt(x, y);
+            mult(x, y);
+            divi(x, y);
+        }
+
+        function soma(x, y)
+        {
+            console.log(x+y);
+        }
+
+        function subt(x, y)
+        {
+            console.log(x-y);
+        }
+
+        function mult(x, y)
+        {
+            console.log(x*y);
+        }
+
+        function divi(x, y)
+        {
+            console.log(x/y);
+        }
+
+        calcular(6, 2);
+
+    </script>
+</body>
+</html>
