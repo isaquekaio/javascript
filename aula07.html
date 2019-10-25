@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 07 - JS</title>
+</head>
+<body>
+    <script>
+        /*
+            == igual a 
+            === igual em valor e tipo
+            != diferente de 
+            !== diferente em valor e tipo
+            > maior que
+            < menor que
+            >= maior ou igual
+            <= menor ou igual
+
+            && e
+            || ou
+            ! não
+        */
+        var idade = 25;
+        var situacao = (idade >= 18) ? 'Maioridade':'Menor de idade';
+        console.log(situacao);
+
+        var dia = new Date().getDay();
+        switch(dia)
+        {
+            /*
+                agrupamento
+                case 6:
+                case 0:
+                console.log('Final de semana');
+                break;
+            */
+            case 5:
+                console.log('Hoje é sexta-feira =)');
+                break;
+            case 6:
+                console.log('Hoje é sábado #partiuCirculoDeOração');
+                break;
+            case 0: 
+                console.log('Hoje é domingo #partiuEscolaDominical');
+                break;
+            default:
+                console.log('Dia normal: trabalho + estudo');
+        }
+        
+        var linguagem = ['PHP', 'Java', 'C', 'C++', 'C#', 'ASP', 'Python'];
+        var i;
+        for(i = 0; i < linguagem.length; i++){
+            //if(i == 2) continue;  //pular o 2
+            //if(i == 2) break; //Encerra no 2
+            console.log(linguagem[i]);
+        }
+        
+        var contador = 0;
+        /*
+        while(contador < linguagem.length){
+            console.log(linguagem[contador]);
+            contador++;
+        }
+        */
+
+        do{
+            console.log(linguagem[contador]);
+            contador++;
+        }while(contador < linguagem.length)
+    </script>
+</body>
+</html>
