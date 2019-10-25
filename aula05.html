@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 05 - JS</title>
+</head>
+<body>
+    
+    <script>
+        //var txt = "Pegou \'fogo\' na \\ caixa d\'água";
+        var txt = "Para aprender JavaScript pesquise no Google";
+
+        console.log(txt);
+
+        console.log(txt.length);
+        console.log(txt.indexOf('aprender'));
+        console.log(txt.lastIndexOf('aprender'));
+        console.log(txt.search('aprender'));
+        console.log(txt.slice(0, 4));
+        console.log(txt.substring(0, 4));
+        console.log(txt.substr(5, 8));
+        console.log(txt.replace('Google', 'RBtech'));
+        console.log(txt.toUpperCase());
+        console.log(txt.toLowerCase());
+
+        var numero = 30.65842;
+
+        //Casas decimais, arrendodado
+        console.log(numero.toFixed(2));
+        console.log(numero.toPrecision(3));
+        console.log(numero.toString());
+    </script>
+</body>
+</html>
