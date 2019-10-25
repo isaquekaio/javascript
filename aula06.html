@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 06 - JS</title>
+</head>
+<body>
+    <script>
+        
+        var d = new Date();
+        console.log(Date());
+
+        //var d = new Date(86400000);
+        
+        console.log(d);
+        console.log(d.toUTCString());
+        console.log(d.toDateString());
+        console.log('get Date: ' + d.getDate());
+        console.log('get Day: ' + d.getDay());
+        console.log('getFullYear: ' + d.getFullYear());
+        console.log('getHours: ' + d.getHours());
+        console.log('getMiliseconds: ' + d.getMilliseconds());
+        console.log('getMinutes: ' + d.getMinutes());
+        //começa com contar em 0
+        console.log('getMonth: ' + d.getMonth());  
+        console.log('getSeconds: ' + d.getSeconds());
+        console.log('getTime: ' + d.getTime());
+        d.setDate(17);
+        console.log(d);
+
+        function data(data = new Date())
+        {
+            var d = data.getDate();
+            var m = data.getMonth()+1;
+            var y = data.getFullYear();
+            
+            if(d.toString().length == 1) d = '0'+d;
+            if(m.toString().length == 1) m = '0'+m;
+
+            return d+'/'+m+'/'+y;
+        }
+
+        console.log(data());
+    </script>
+</body>
+</html>
