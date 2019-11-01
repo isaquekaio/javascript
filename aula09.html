@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 09 - JS</title>
+</head>
+<body onload="teste()">
+    <p id="demo">123</p>
+    <p class="exemplo"></p>
+    <p class="exemplo"></p>
+    <p class="exemplo"></p>
+    <div class="exemplo"></div>
+
+    <img id="imagem" src="imagem.jpg" alt="Texto alternativo">
+
+    <h1 onclick="this.innerHTML = 'Obrigado!'">Clique aqui</h1>
+
+    <h1 onclick="funcao(this)">Clique aqui, cara</h1>
+
+    <h3 id="funcao_teste">Clique aqui, mano</h3>
+
+    <select name="" id="teste123" onchange="teste123()">
+        <option value="opcao1">Opção 1</option>
+        <option value="opcao2">Opção 2</option>
+        <option value="opcao3">Opção 3</option>
+    </select>
+
+    <h5 id="funcao17" onmouseover="funcao1(this)" onmouseout="funcao2(this)">Passe o mouse aqui</h5>
+    <script>
+        //document.getElementById('demo').innerHTML = 'Texto do meu parágrafo';
+        //console.log(document.getElementsByTagName('p'));
+        //console.log(document.getElementsByClassName('exemplo'));
+        /*
+        var x = document.getElementsByClassName('exemplo');
+        x[0].innerHTML = 'Texto 0';
+        x[1].innerHTML = 'Texto 1'; 
+        x[2].innerHTML = 'Texto 3'; 
+        */
+
+        //var x = document.querySelectorAll('div.exemplo');
+        //var x = document.querySelectorAll('p.exemplo');
+        //console.log(x);
+
+        //document.write('Isso é uma página');
+        //document.getElementById('imagem').src = 'foto.jpg';
+        //document.getElementById('imagem').alt = 'Texto 2';
+
+        document.getElementById('demo').style.backgroundColor = 'red';
+        document.getElementById('demo').style.color = 'white';
+
+        function funcao(elemento){
+            elemento.innerHTML = 'Valeu Cara!';
+        }
+
+        function funcao_teste(){
+            document.getElementById('funcao_teste').innerHTML = 'Valeu Mano!';
+        }
+        document.getElementById('funcao_teste').onclick = funcao_teste;
+
+        function teste(){
+            alert('Página carregada!');
+        }
+
+        function teste123(){
+            alert('Opção alterada');
+        }
+        document.getElementById('teste123').onclick = teste123;
+
+        function funcao1(elemento){
+            elemento.innerHTML = 'Ok, mouse sobre o elemento';
+        }
+
+        function funcao2(elemento){
+            elemento.innerHTML = 'Passe o mouse aqui';
+        }
+
+        /*
+        document.baseURI / document.body / document.doctype / document.documentURI 
+        document.domain / document.head / document.inputEncoding / 
+        document.lastModified / document.title / document.URL
+        document.forms / document.links / document.images
+        document.scripts
+        */
+
+        /*
+        onclick / onload / onchange / onmouseover / onmouseout 
+        onfocus / onmousedown / onmouseup
+        */
+        
+        //Link: https://www.w3schools.com/jsref/dom_obj_style.asp
+    </script>
+</body>
+</html>
